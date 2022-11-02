@@ -53,6 +53,6 @@ label start:
 
     b "Wow that's awesome! You should play it for me sometime."
 
-    b "Or maybe you could play for the festival?"
+    h "Uh... I'd rather play when I'm better"
 
     return
