@@ -1,26 +1,58 @@
-﻿# The script of the game goes in this file.
+﻿define b = Character("Bob", color="#3dd8a9")
+define h = Character("Herbert", color="#bb663e")
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+transform slightleft:
+    xalign 0.3
+    yalign 1.0
 
-define s = Character("Sylvie", color="#c8ffc8")
-define m = Character("Me", color="#c8c8ff")
-
-# The game starts here.
+transform slightright:
+    xalign 0.7
+    yalign 1.0
 
 label start:
 
-    scene bg meadow
+    scene bg room
     with fade
 
-    s "Hi there! How was class?"
+    "Oh crap, I overslept."
 
-    m "Good..."
+    "Well I better get up quick."
 
-    "I can't bring myself to admit that it all went in one ear and out the other."
+    show bob happy
+    with dissolve
 
-    s "Are you going home now? Wanna walk back with me?"
+    b "I'll just skip breakfast for now."
 
-    m "Sure!"
+    "I grab my bag and bolt out of the door."
+
+    scene bg neighbourhood
+    with fade
+
+    show bob happy
+    with dissolve
+
+    b "If only this day could be a little better."
+
+    show bob happy at slightleft
+    with move
+
+    show herbert happy at slightright
+    with dissolve
+
+    h "Heya Bob, running a little late I see!"
+
+    "As Herbert appears I smile."
+
+    b "Hello there Herbert, I could say the same to you."
+
+    h "Well you know I kinda just forgot about time I guess."
+
+    b "Doing what, sleeping?"
+
+    h "Haha no, I actually started learning the banjo."
+
+    b "Wow that's awesome! You should play it for me sometime."
+
+    b "Or maybe you could play for the festival?"
 
     return
