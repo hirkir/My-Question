@@ -10,7 +10,6 @@ transform slightright:
     yalign 1.0
 
 label start:
-
     scene bg room
     with fade
 
@@ -53,6 +52,17 @@ label start:
 
     b "Wow that's awesome! You should play it for me sometime."
 
-    h "Uh... I'd rather play when I'm better"
+    h "Uh... I'd rather play when I'm better."
 
-    return
+    menu:
+        b "Well I think you should..."
+
+        "Play at the prom":
+            jump play_at_prom
+
+        "Play it for me":
+            jump play_for_me
+            
+label play_at_prom:
+
+label play_for_me:
