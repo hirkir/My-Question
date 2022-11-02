@@ -16,7 +16,7 @@ label start:
 
     "Oh crap, I overslept."
 
-    "Well I better get up quick."
+    "I better get up quick."
 
     show bob happy
     with dissolve
@@ -41,7 +41,7 @@ label start:
 
     h "Heya Bob, running a little late I see!"
 
-    "As Herbert appears I smile."
+    "My spirits are lifted as Herbert appears."
 
     b "Hello there Herbert, I could say the same to you."
 
