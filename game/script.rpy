@@ -64,9 +64,13 @@ label start:
             jump jam_with_me
             
 label play_at_prom:
-    h "Well then I'd have to practice a whole lot, and besides my nervousness would make it unable for me to play."
+    h "Then I'd have to practice a whole lot, and besides my nervousness would make it unable for me to play."
+
+    b ""
 
 label jam_with_me:
     h "But I suck though, and I wouldn't be able to keep up with your skill."
 
-    b "Noo don't be so hard on yourself, I think we would play great together."
+    b "Don't be so hard on yourself."
+    
+    b "I think we would play great together."
