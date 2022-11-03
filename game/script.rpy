@@ -60,8 +60,8 @@ label start:
         "Play at the prom":
             jump play_at_prom
 
-        "Play it for me":
-            jump play_for_me
+        "Jam with me":
+            jump jam_with_me
             
 label play_at_prom:
 
