@@ -52,25 +52,32 @@ label start:
 
     b "Wow that's awesome! You should play it for me sometime."
 
-    h "Uh... I'd rather play when I'm better."
+    h "Uh... I'd rather play for you when I'm better."
 
     menu:
         b "Well I think you should..."
 
-        "Play at the prom":
-            jump play_at_prom
+        "Play at the festival":
+            jump play_at_festival
 
-        "Jam with me":
-            jump jam_with_me
+        "Join my band"
+            jump join_band
             
-label play_at_prom:
+label play_at_festival:
     h "Then I'd have to practice a whole lot, and besides my nervousness would make it unable for me to play."
+
+    b "It would give you alot of experience playing in front of a crowd."
+    
+    b "You know, when I played at the festival, I was really nervous, but when I saw that people were loving it, I got a confidence boost."
+
+    return
+
+
+
+label join_band:
+    h ""
 
     b ""
 
-label jam_with_me:
-    h "But I suck though, and I wouldn't be able to keep up with your skill."
+    return
 
-    b "Don't be so hard on yourself."
-    
-    b "I think we would play great together."
