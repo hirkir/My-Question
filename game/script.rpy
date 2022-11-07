@@ -9,6 +9,8 @@ transform slightright:
     xalign 0.7
     yalign 1.0
 
+default band = False
+
 label start:
     scene bg room
     with fade
@@ -79,6 +81,8 @@ label play_at_festival:
     return
 
 label join_band:
+    $ band = True
+
     b "What if you join our band? You get all the time you need to practice."
     
     h "Alright then, I'll consider it."
