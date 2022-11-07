@@ -13,6 +13,8 @@ label start:
     scene bg room
     with fade
 
+    play music "audio/Swimming Lessons - Bail Bonds.mp3"
+
     "Oh crap, I overslept."
 
     "I better get up quick."
@@ -60,24 +62,29 @@ label start:
         "Play at the festival":
             jump play_at_festival
 
-        "Join my band"
+        "Join our band":
             jump join_band
             
 label play_at_festival:
-    h "Then I'd have to practice a whole lot, and besides my nervousness would make it unable for me to play."
-
-    b "It would give you alot of experience playing in front of a crowd."
+    b "There is the school festival coming up..."
     
-    b "You know, when I played at the festival, I was really nervous, but when I saw that people were loving it, I got a confidence boost."
+    h "Then I'd have to practice a whole lot,\nand besides my nervousness would make it unable for me to play."
+
+    b "It would give you a lot of experience playing in front of a crowd."
+    
+    b "You know, when I played at the festival, I was really nervous,\nbut when I saw that people were loving it, I got a confidence boost."
+
+    stop music fadeout 1.0
 
     return
-
-
 
 label join_band:
-    h ""
+    b "What if you join our band? You get all the time you need to practice."
+    
+    h "Alright then, I'll consider it."
 
-    b ""
+    b "That's great! You know, you can come in and jam with us on friday if you want."
+
+    stop music fadeout 1.0
 
     return
-
