@@ -22,7 +22,7 @@ label start:
 
     "I better get up quick."
 
-    show bob happy
+    show bob
     with dissolve
 
     b "I'll just skip breakfast for now."
@@ -32,15 +32,15 @@ label start:
     scene bg neighbourhood
     with fade
 
-    show bob happy
+    show bob
     with dissolve
 
     b "If only this day could be a little better."
 
-    show bob happy at slightleft
+    show bob at slightleft
     with move
 
-    show herbert happy at slightright
+    show herbert at slightright
     with dissolve
 
     h "Heya Bob, running a little late I see!"
@@ -110,9 +110,9 @@ label school:
     scene bg hallway
     with fade
 
-    show herbert happy at slightright
+    show herbert at slightright
 
-    show bob happy at slightleft
+    show bob at slightleft
     with dissolve
 
     h "I gotta get to class, see ya!"
@@ -122,7 +122,7 @@ label school:
     hide herbert
     with dissolve
 
-    show bob happy at default
+    show bob at default
     with move
 
     "I run to the classroom considering I'm late."
