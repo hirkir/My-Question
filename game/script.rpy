@@ -132,3 +132,5 @@ label school:
     "The teacher gives me a stern look, but continues the lesson anyway."
 
     "I sit down and try to catch up with what's being taught."
+
+    #day went by
