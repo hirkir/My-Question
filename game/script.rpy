@@ -126,3 +126,9 @@ label school:
     with move
 
     "I run to the classroom considering I'm late."
+
+    "As I get in, I notice everyone staring at me."
+
+    "The teacher gives me a stern look, but continues the lesson anyway."
+
+    "I sit down and try to catch up with what's being taught."
