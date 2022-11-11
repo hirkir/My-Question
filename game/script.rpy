@@ -9,6 +9,7 @@ transform slightright:
     xalign 0.7
     yalign 1.0
 
+
 default band = False
 
 label start:
@@ -76,19 +77,52 @@ label play_at_festival:
     
     b "You know, when I played at the festival, I was really nervous,\nbut when I saw that people were loving it, I got a confidence boost."
 
-    stop music fadeout 1.0
+    h "You say that as if I'm like you, which I'm not."
 
-    return
+    h "Maybe I could practice with you..."
+
+    h "...If you want to of course."
+
+    b "Yeah! That would be fun."
+
+    jump school
 
 label join_band:
     $ band = True
 
     b "What if you join our band? You get all the time you need to practice."
-    
+
     h "Alright then, I'll consider it."
 
     b "That's great! You know, you can come in and jam with us on friday if you want."
 
-    stop music fadeout 1.0
+    h "Yep, sounds like a plan."
 
-    return
+    jump school
+
+label school:
+
+    if band:
+        "As we make our way to school I think about how excited I am to have Herbert jam with the band."
+    else:
+        "We walk besides one another as I think about how fun it will be to practice together."
+
+    scene bg hallway
+    with fade
+
+    show herbert happy at slightright
+
+    show bob happy at slightleft
+    with dissolve
+
+    h "I gotta get to class, see ya!"
+
+    b "Bye!"
+
+    hide herbert
+    with dissolve
+
+    show bob happy at default
+    with move
+
+    "I run to the classroom considering I'm late."
