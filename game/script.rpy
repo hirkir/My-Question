@@ -101,7 +101,6 @@ label join_band:
     jump school
 
 label school:
-
     if band:
         "As we make our way to school I think about how excited I am to have Herbert jam with the band."
     else:
@@ -133,4 +132,8 @@ label school:
 
     "I sit down and try to catch up with what's being taught."
 
-    #day went by
+    #skip to end of school
+
+    "The day goes by as I'm ready to go home."
+
+    
