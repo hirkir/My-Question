@@ -135,5 +135,3 @@ label school:
     #skip to end of school
 
     "The day goes by as I'm ready to go home."
-
-    
