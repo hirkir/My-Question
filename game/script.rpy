@@ -9,14 +9,13 @@ transform slightright:
     xalign 0.7
     yalign 1.0
 
-
 default band = False
 
 label start:
     scene bg room
     with fade
 
-    play music "audio/Swimming Lessons - Bail Bonds.mp3"
+    #play music "audio/Swimming Lessons - Bail Bonds.mp3"
 
     "Oh crap, I overslept."
 
@@ -71,7 +70,7 @@ label start:
 label play_at_festival:
     b "There is the school festival coming up..."
     
-    h "Then I'd have to practice a whole lot,\nand besides my nervousness would make it unable for me to play."
+    h "Then I'd have to practice a whole lot, and besides my nervousness would make it unable for me to play."
 
     b "It would give you a lot of experience playing in front of a crowd."
     
@@ -81,9 +80,9 @@ label play_at_festival:
 
     h "Maybe I could practice with you..."
 
-    h "...If you want to of course."
+    h "...If you want to."
 
-    b "Yeah! That would be fun."
+    b "Yeah, that sounds like fun!"
 
     jump school
 
@@ -126,12 +125,16 @@ label school:
 
     "I run to the classroom considering I'm late."
 
-    "As I get in, I notice everyone staring at me."
+    scene bg classroom
+    with fade
 
+    show bob
+    with dissolve
+
+    "As I get in, I notice everyone staring at me."
+    
     "The teacher gives me a stern look, but continues the lesson anyway."
 
     "I sit down and try to catch up with what's being taught."
-
-    #skip to end of school
 
     "The day goes by as I'm ready to go home."
