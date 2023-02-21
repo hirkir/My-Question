@@ -1,8 +1,8 @@
 ﻿define b = Character("Bob", color="#3dd8a9")
 define h = Character("Herbert", color="#bb663e")
 
-image bob = Placeholder("boy")
-image herbert = Placeholder("boy")
+image b = Placeholder("boy")
+image h = Placeholder("boy")
 
 transform slightleft:
     xalign 0.3
@@ -69,14 +69,11 @@ label start:
 
         "Join our band":
             jump join_band
-
-        # "test":
-        #     jump test1
             
 label play_at_festival:
     b "There is the school festival coming up..."
     
-    h "Then I'd have to practice a whole lot,\nand besides my nervousness would make it unable for me to play."
+    h "Then I'd have to practice a whole lot, and besides my nervousness would make it unable for me to play."
 
     b "It would give you a lot of experience playing in front of a crowd."
     
@@ -88,9 +85,9 @@ label play_at_festival:
 
     h "Maybe I could practice with you..."
 
-    h "...If you want to of course."
+    h "...If you want to."
 
-    b "Yeah, that would be fun."
+    b "Yeah, that sounds like fun!"
 
     jump school
 
@@ -108,17 +105,6 @@ label join_band:
     b "That's great! You can come in and jam with us on friday if you want."
 
     h "Sounds like a plan then."
-
-    jump school
-
-label test1:
-    scene bg neighbourhood
-    with fade
-
-    show bob at left
-    with dissolve
-
-    b "test"
 
     jump school
 
@@ -148,16 +134,20 @@ label school:
 
     "I run to the classroom considering I'm late."
 
-    scene black
+    scene bg classroom
     with fade
 
-    "As I get in, I notice everyone staring at me."
+    show bob
+    with dissolve
 
+    "As I get in, I notice everyone staring at me."
+    
     "The teacher gives me a stern look, but continues the lesson anyway."
 
     "I sit down and try to catch up with what's being taught."
 
-    #skip to end of school
+    scene black
+    with wipeleft
 
     "The day goes by as I'm ready to go home."
 
@@ -188,9 +178,6 @@ label schoolend:
 
     b "Sure!"
 
-    jump neighbourhood
-
-label neighbourhood:
     scene bg neighbourhood
     with fade
 
@@ -204,6 +191,10 @@ label neighbourhood:
     h "Here we are."
 
     if band:
-        b "If you do decide to come, you'll be very welcome."
+        b "If you do decide to come to our practice room, you'll be very welcome."
 
         b "Our bandmates are really friendly so I don't think you'll have a hard time talking to them."
+    else:
+        b "Just contact me if you decide to practice together."
+
+        b "It's gonna be fun alright?"
