@@ -1,8 +1,8 @@
 ﻿define b = Character("Bob", color="#3dd8a9")
 define h = Character("Herbert", color="#bb663e")
 
-image b = Placeholder("boy")
-image h = Placeholder("boy")
+image bob = Placeholder("boy")
+image herbert = Placeholder("boy")
 
 transform slightleft:
     xalign 0.3

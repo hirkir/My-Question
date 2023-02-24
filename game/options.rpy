@@ -48,7 +48,7 @@ define build.name = "MyQuestion"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
@@ -207,3 +207,5 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+define config.has_autosave = False
