@@ -1,6 +1,9 @@
 ﻿define b = Character("Bob", color="#3dd8a9")
 define h = Character("Herbert", color="#bb663e")
 
+image bob = Placeholder("boy")
+image herbert = Placeholder("boy")
+
 transform slightleft:
     xalign 0.3
     yalign 1.0
@@ -12,10 +15,10 @@ transform slightright:
 default band = False
 
 label start:
+    play music "audio/Swimming Lessons - Bail Bonds.mp3"
+    
     scene bg room
     with fade
-
-    #play music "audio/Swimming Lessons - Bail Bonds.mp3"
 
     "Oh crap, I overslept."
 
@@ -42,19 +45,19 @@ label start:
     show herbert at slightright
     with dissolve
 
-    h "Heya Bob, running a little late I see!"
+    h "Hiya Bob, running a little late I see!"
 
     "My spirits are lifted as Herbert appears."
 
     b "Hello there Herbert, I could say the same to you."
 
-    h "Well you know I kinda just forgot about time I guess."
+    h "I kinda just forgot about time I guess."
 
     b "Doing what, sleeping?"
 
     h "Haha no, I actually started learning the banjo."
 
-    b "Wow that's awesome! You should play it for me sometime."
+    b "Whoa that's awesome! You should play it for me sometime."
 
     h "Uh... I'd rather play for you when I'm better."
 
@@ -74,9 +77,11 @@ label play_at_festival:
 
     b "It would give you a lot of experience playing in front of a crowd."
     
-    b "You know, when I played at the festival, I was really nervous,\nbut when I saw that people were loving it, I got a confidence boost."
+    b "You know, when I played at the festival I was really nervous,\nbut when I saw that people were loving it, I got a confidence boost."
 
     h "You say that as if I'm like you, which I'm not."
+
+    b "Learning to play in front of a crowd is still my main point though."
 
     h "Maybe I could practice with you..."
 
@@ -89,13 +94,17 @@ label play_at_festival:
 label join_band:
     $ band = True
 
-    b "What if you join our band? You get all the time you need to practice."
+    b "What if you join our band? You'll get all the time you need to practice."
 
-    h "Alright then, I'll consider it."
+    h "Who are the band members?"
 
-    b "That's great! You know, you can come in and jam with us on friday if you want."
+    b "Just some friends from school, I'll introduce you when you get there."
 
-    h "Yep, sounds like a plan."
+    h "Right then, I'll consider it."
+
+    b "That's great! You can come in and jam with us on friday if you want."
+
+    h "Sounds like a plan then."
 
     jump school
 
@@ -103,7 +112,7 @@ label school:
     if band:
         "As we make our way to school I think about how excited I am to have Herbert jam with the band."
     else:
-        "We walk besides one another as I think about how fun it will be to practice together."
+        "We walk besides one another as I think about how fun it'll be to practice together."
 
     scene bg hallway
     with fade
@@ -137,4 +146,55 @@ label school:
 
     "I sit down and try to catch up with what's being taught."
 
+    scene black
+    with wipeleft
+
     "The day goes by as I'm ready to go home."
+
+    jump schoolend
+
+label schoolend:
+    show bg hallway
+    with fade
+
+    show bob
+    with dissolve
+
+    b "Phew, that was tiring."
+
+    b "Time to find Herbert."
+
+    show bob at slightleft
+    with move
+
+    show herbert at slightright
+    with dissolve
+
+    h "There you are!"
+
+    b "Were you looking for me too?"
+
+    h "Yeah, want to walk home together?"
+
+    b "Sure!"
+
+    scene bg neighbourhood
+    with fade
+
+    "As we arrive, I think about what we agreed to do."
+
+    show bob at slightleft
+
+    show herbert at slightright
+    with dissolve
+
+    h "Here we are."
+
+    if band:
+        b "If you do decide to come to our practice room, you'll be very welcome."
+
+        b "Our bandmates are really friendly so I don't think you'll have a hard time talking to them."
+    else:
+        b "Just contact me if you decide to practice together."
+
+        b "It's gonna be fun alright?"
