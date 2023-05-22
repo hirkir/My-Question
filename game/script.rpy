@@ -94,6 +94,8 @@ label play_at_festival:
 label join_band:
     $ band = True
 
+    #show bob questioning school
+
     b "What if you join our band? You'll get all the time you need to practice."
 
     h "Who are the band members?"
@@ -193,7 +195,7 @@ label schoolend:
     if band:
         b "If you do decide to come to our practice room, you'll be very welcome."
 
-        b "Our bandmates are really friendly so I don't think you'll have a hard time talking to them."
+        b "Our bandmates are really friendly so I don't think you'll have a hard time getting along with them."
     else:
         b "Just contact me if you decide to practice together."
 
